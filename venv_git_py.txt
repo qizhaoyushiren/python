@@ -1,0 +1,11 @@
+#virtualenv --no-site-packages venv # You can name venv for other name
+source venv/bin/activate
+vim *.py
+git add *.py
+git commit -m"somewhat MSG to commit"
+git status # look the status for the dir
+git push -u origin master
+# if something go wrong type $ git pull origin master
+git log # or $ git log --pretty=oneline
+git reset --hard HEAD^
+deactivate # off the virtualenv

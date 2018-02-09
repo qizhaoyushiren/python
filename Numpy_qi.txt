@@ -1,0 +1,36 @@
+# make a A 2x2 array
+A = np.array([[1,2],[3,4]])
+# Vector multiplication
+A * A
+# vector dot product
+np.dot(A,A)
+# -
+A - A
+# + 
+A + A
+# Vector transpose
+A.T
+np.transpose(A)
+# transport A to M Vector to Matrix
+M = np.matrix(A)
+# conjugate??
+np.conjugate(M)
+# invert
+np.invert(M)
+# r is rows and c is columns
+(r,c) = A.shape
+r,c
+A.reshape((1,r * c))
+# np.repeat(A,2) np.tile(A,4)
+
+# add a array
+B = np.array([[5,6]])
+np.concatenate((A,B), axis = 0)
+np.vstack((A,B))
+np.concatenate((A,B.T), axis=1)
+
+#########################################
+
+from numpy import random
+random.rand(2,5)
+random.randn(2,5)
